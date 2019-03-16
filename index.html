@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title> Jovan Jocic </title>
@@ -7,20 +8,57 @@
 </head>
 <body>
     <header>
-        <div id="headerName">Jovan Jocić</div>
+        <div id="headerName"><a id="mainName" class="link" href="#">Jovan Jocić</a></div>
         <navigation id="headerNavigation">
-                <a href="#">Projects</a>
-                <a href="#">About me</a>
-                <a href="#">Contact</a>
+                <a class="link" href="#projects">Projects</a>
+                <a class="link" href="#aboutMe">About me</a>
+                <a class="link" href="#">Contact</a>
         </navigation>
     </header>
     <main id="main">
     
+    <!-- first page, intro -->
         <div id="firstView">
             <p id="firstViewText">Welcome to my portfolio</p>
-            <p>Stay tuned. More is coming.</p>
+            <p>&lt;p&gt;Stay tuned. More is coming.&lt;p&gt;<span class="blinker">_</span></p>
         </div>
-    
+        
+    <!-- projects, onhover to be js-added -->
+        <div id="projects">
+            <div class="project">
+                <p>PROJECT 1</p>
+            </div>
+            <div class="project">
+                <p>PROJECT 2</p>
+            </div>
+            <div class="project">
+                <p>PROJECT 3</p>
+            </div>
+            <div class="project">
+                <p>PROJECT 4</p>
+            </div>
+        </div>
+        
+    <!-- about me -->
+        <div id="aboutMe">
+            <div class="aboutMeBlock">
+                <h2></h2>
+            </div>
+            <div class="aboutMeBlock">
+                <div class="abmtext">
+                    <p>Current skills</p>
+                </div>
+                <div class="ambright">
+                    <img class="skillimg" alt="html 5" src="https://www.w3.org/html/logo/downloads/HTML5_1Color_Black.png">
+                    <img class="skillimg" alt="css3" src="http://www.modiegi.com/assets/img/sponsor1.png">
+                    <img class="skillimg" alt="javascript" src="https://astrolabs.com/wp-content/uploads/2017/08/javascript1600.png">
+                    <img class="skillimg" alt="react" src="https://camo.githubusercontent.com/54f4db0b0c4c4e131bd9533a6d8cf1242d7fd854/687474703a2f2f73686f636b6a732e6769746875622e696f2f72656163746a732e737667">
+                </div>
+                <div class="abmtext">
+                <p>This is just the beginning.<span class="blinker">_</span></p>
+                </div>
+            </div>
+        </div>
     </main>
 
 </body>

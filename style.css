@@ -2,8 +2,9 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Source Code Pro', monospace;
-    background: #f7f7f7;
     color: #AAAAAA;
+    scroll-behavior: smooth;
+    cursor: crosshair;
 }
 
 /* HEADER */
@@ -33,11 +34,14 @@ header div {
     align-items: center;
     margin-right: 5vw;
 }
-
-#headerNavigation a {
+#mainName {
+    font-size: 18px;
+}
+.link {
     margin: 10px;
     text-decoration: none;
     color: #AAAAAA;
+    cursor: cell;
 }
     
 /* FIRST VIEW */
@@ -53,3 +57,87 @@ header div {
 #firstViewText {
     font-size: 24px;
 }
+
+.blinker {
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* PROJECTS */
+#projects {
+    height: 100vh;
+    background-color: #AAAAAA;
+    display: flex;
+}
+
+.project {
+    flex: 1;
+    border: 1px solid #262626;
+    color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project p {
+    font-size: 23px;
+}
+
+/* ABOUT ME */
+#aboutMe {
+    height: 90vh;
+    background-color: #262626;
+    display: flex;
+    color: #AAAAAA;
+}
+
+.aboutMeBlock {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #AAAAAA;
+}
+.abmtext {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ambright {
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skillimg {
+    height: 12vh;
+    background-color: #AAAAAA;
+    padding: 5px;
+    border-radius: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
