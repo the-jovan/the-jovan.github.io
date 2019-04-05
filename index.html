@@ -1,65 +1,85 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <title> Jovan Jocic </title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div id="headerName"><a id="mainName" class="link" href="#">Jovan Jocić</a></div>
-        <navigation id="headerNavigation">
-                <a class="link" href="#projects">Projects</a>
-                <a class="link" href="#aboutMe">About me</a>
-                <a class="link" href="#">Contact</a>
-        </navigation>
-    </header>
-    <main id="main">
     
-    <!-- first page, intro -->
-        <div id="firstView">
-            <p id="firstViewText">Welcome to my portfolio</p>
-            <p>&lt;p&gt;Stay tuned. More is coming.&lt;p&gt;<span class="blinker">_</span></p>
-        </div>
-        
-    <!-- projects, onhover to be js-added -->
-        <div id="projects">
-            <div class="project">
-                <p>PROJECT 1</p>
-            </div>
-            <div class="project">
-                <p>PROJECT 2</p>
-            </div>
-            <div class="project">
-                <p>PROJECT 3</p>
-            </div>
-            <div class="project">
-                <p>PROJECT 4</p>
-            </div>
-        </div>
-        
-    <!-- about me -->
-        <div id="aboutMe">
-            <div class="aboutMeBlock">
-                <h2></h2>
-            </div>
-            <div class="aboutMeBlock">
-                <div class="abmtext">
-                    <p>Current skills</p>
-                </div>
-                <div class="ambright">
-                    <img class="skillimg" alt="html 5" src="https://www.w3.org/html/logo/downloads/HTML5_1Color_Black.png">
-                    <img class="skillimg" alt="css3" src="http://www.modiegi.com/assets/img/sponsor1.png">
-                    <img class="skillimg" alt="javascript" src="https://astrolabs.com/wp-content/uploads/2017/08/javascript1600.png">
-                    <img class="skillimg" alt="react" src="https://camo.githubusercontent.com/54f4db0b0c4c4e131bd9533a6d8cf1242d7fd854/687474703a2f2f73686f636b6a732e6769746875622e696f2f72656163746a732e737667">
-                </div>
-                <div class="abmtext">
-                <p>This is just the beginning.<span class="blinker">_</span></p>
-                </div>
-            </div>
-        </div>
-    </main>
+<head>
+    <title>Jovan Jocić</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+</head>
+    
+<body>
 
+<main>
+    <div id="logo-corner" class="basic-div dark">
+        <div>
+            <h2 id="logo-corner-name">Jovan Jocic</h2>
+        </div>
+        <div>
+            <img id="img-logo" src="https://i.ibb.co/VLvkM51/g900.png">
+        </div>
+        
+    </div>
+
+    <div id="about-me" class="basic-div section light">
+        <div class="visibleAtFirst vafAbout">ABOUT ME</div>
+        <div id="about-me-page" class="page">
+            <h1>About me</h1>
+            <div id="amText">
+                <div id="amImage" class="amBlock"></div>
+                <div id="amText" class="amBlock">
+                    <div>
+                    <p>(I'm just a regular everyday normal motherfucker)    <br/>
+                        I don't like margarine, I much prefer the taste of butter<br/>
+                        (I'm just a regular everyday normal motherfucker)<br/>
+                        My favorite movies as a kid were Superman and Ghostbusters<br/>
+                        (I'm just a regular everyday normal motherfucker)<br/>
+                        I have a hard time opening my eyes underwater<br/>
+                        (I'm just a regular everyday normal motherfucker)<br/>
+                        And I'm not a huge Nicolas Cage fan</p>
+                        <p>I'm from a lower-middle class family<br/>
+                            Me any my brothers and sisters played hide-and-seek<br/>
+                            I have good memories from my childhood, bitch<br/>
+                            My favorite toy was my fucking firetruck, bitch<br/>
+                            I used to play with that motherfucker all day long<br/>
+                            Until I learned about sex from the Sears catalog<br/>
+                            And then I played with my motherfucker all day long<br/>
+                            About ten times a day, man, all year long</p>
+                        <h4>You can find me here:</h4><hr/>
+                        <a class="contact-link" href="https://github.com/the-jovan" target="_blank">github</a>
+                        <p id="email">jovanjocic1993@gmail.com</p>
+                        <hr/>
+                        <a class="contact-link" href="https://docdro.id/hHS2Mxr" target="_blank">Download CV</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="projects" class="basic-div section dark">
+        <div class="visibleAtFirst vafProjects">PROJECTS</div>
+        <div id="projects-page" class="page">
+            <div id="projectsHeadline">
+                <h1>Projects</h1>
+            </div>
+            <div id="projects-project"></div>
+        </div>
+    </div>
+    
+    <div id="skills" class="basic-div section light">
+        <div class="visibleAtFirst vafSkills">SKILLZ</div>
+        <div id="skills-page" class="page">THIS SHITZ ABOUT SKILLZ</div>
+    </div>
+    
+    <div id="contact" class="basic-div dark">
+        <div id="contact-info">
+            <a href="https://github.com/the-jovan" target="_blank">github</a>
+            <p id="email">jovanjocic1993@gmail.com</p>
+            <a href="https://docdro.id/hHS2Mxr" target="_blank">Download CV</a>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</main>
+    
+    
 </body>
 </html>
