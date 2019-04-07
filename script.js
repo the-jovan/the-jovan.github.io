@@ -1,3 +1,6 @@
+window.onresize = function(){ location.reload(); }
+console.log(screen.width)
+if(screen.width > 501) {
 // CLASS that shows divs on click
 class ShowDiv {
     constructor(div, page) {
@@ -58,8 +61,18 @@ document.getElementById("img-logo").onclick = function() {
 //        setTimeout(function() { document.getElementById("skillsPage").style.display = "none"}, 1400);
     }
 }
+} else {
+    null
+//    alert("Better experience in horizontal view.")
+}
 
 
+
+
+
+
+// PROJECTS FROM HERE ON
+// _________________________________
 let whereToAddDiv = document.getElementById("projects-project");
 
 function addDiv(image, headline, subhead, text, github, live, lp) {
@@ -81,7 +94,6 @@ function addDiv(image, headline, subhead, text, github, live, lp) {
         </div><hr/>
     `;
     whereToAddDiv.insertAdjacentHTML("beforeend", newDiv)
-    console.log(newDiv)
 }
 
 // PROJECTS
@@ -134,3 +146,5 @@ addDiv("https://i.ibb.co/XVJWQ5k/form.png",
       '"Help us improve" type of survey to help firm get better idea of what needs to be improved.',
       "#",
       "https://codepen.io/witz/full/pqWdKw", "here")
+
+//________________________________________________________

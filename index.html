@@ -2,7 +2,11 @@
     
 <head>
     <title>Jovan Jocić</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 320px) and (max-device-width: 500px)" href="mobileStyle.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 501px)" href="style.css" />
+    
+    
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 </head>
     
@@ -10,13 +14,17 @@
 
 <main>
     <div id="logo-corner" class="basic-div dark">
-        <div>
+        <div id="logo-left">
             <h2 id="logo-corner-name">Jovan Jocic</h2>
+            <div id="navigation">
+                <a href="#projects-page">Projects</a>
+                <a href="#skills-page">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
-        <div>
+        <div id="logo-right">
             <img id="img-logo" src="https://i.ibb.co/VLvkM51/g900.png">
         </div>
-        
     </div>
 
     <div id="about-me" class="basic-div section light">
@@ -27,27 +35,18 @@
                 <div id="amImage" class="amBlock"></div>
                 <div id="amText" class="amBlock">
                     <div>
-                    <p>(I'm just a regular everyday normal motherfucker)    <br/>
-                        I don't like margarine, I much prefer the taste of butter<br/>
-                        (I'm just a regular everyday normal motherfucker)<br/>
-                        My favorite movies as a kid were Superman and Ghostbusters<br/>
-                        (I'm just a regular everyday normal motherfucker)<br/>
-                        I have a hard time opening my eyes underwater<br/>
-                        (I'm just a regular everyday normal motherfucker)<br/>
-                        And I'm not a huge Nicolas Cage fan</p>
-                        <p>I'm from a lower-middle class family<br/>
-                            Me any my brothers and sisters played hide-and-seek<br/>
-                            I have good memories from my childhood, bitch<br/>
-                            My favorite toy was my fucking firetruck, bitch<br/>
-                            I used to play with that motherfucker all day long<br/>
-                            Until I learned about sex from the Sears catalog<br/>
-                            And then I played with my motherfucker all day long<br/>
-                            About ten times a day, man, all year long</p>
-                        <h4>You can find me here:</h4><hr/>
+                    <h4>Jack of all trades, master of some.</h4>
+                    <p>Hi, I'm self-motivated self-taught web-developer in making.<br/><br/>Throughout my life I've discovered that I have a knack for creative stuff. I'm simply good at creating beauty out of thin air, whether it had physical form - Diorama Light-boxes, poems, logos etc. or not - music, singing (in Portuguesse...long story for another time). <br/><br/>
+                        Think of this as another way of me trying to express myself.<br/><br/> First few projects might give a different vibe, but I do not like ordinary or blown out of proportion things. At the moment I'm all about making minimalistic websites with lots of detail that will not make you scroll endlessly to get somewhere, but instead will interact with you and create itself in front of your eyes.
+                        <br/><br/><br/>
+                    </p>
+                        <div id="about-contact">
+                        Contact, links & stuff:<hr/>
                         <a class="contact-link" href="https://github.com/the-jovan" target="_blank">github</a>
                         <p id="email">jovanjocic1993@gmail.com</p>
                         <hr/>
                         <a class="contact-link" href="https://docdro.id/hHS2Mxr" target="_blank">Download CV</a>
+                            </div>
                 </div>
             </div>
             </div>
@@ -65,8 +64,27 @@
     </div>
     
     <div id="skills" class="basic-div section light">
-        <div class="visibleAtFirst vafSkills">SKILLZ</div>
-        <div id="skills-page" class="page">THIS SHITZ ABOUT SKILLZ</div>
+        <div class="visibleAtFirst vafSkills">SKILLS</div>
+        <div id="skills-page" class="page">
+                <h1>Skills</h1>
+            <div id="skillsText">
+                <div id="softSkills">
+                    <ul>
+                        <li><u>Creativity</u> - With many talents come many hobbies...way to many to handle in one lifetime</li>
+                        <li><u>Accountability</u> - Probably the only guy I know that is (almost) never late.
+                        </li>
+                        <li><u>Patience</u> - I'm coaching children and high-schoolers. Nothing else to add.</li>
+                        <li><u>Problem solving</u> - Godlike level "Escape the room" games solver, among other things.</li>
+                        <li><u>Curiosity</u> - When in new surroundings I usually try to learn as much as I can as fast as possible, so I'll be everywhere, observing, asking, learning.</li>
+                        <li><u>Strong work ethic</u> - literally putting my goal before myself at this very moment.</li>
+                    </ul>
+                    And so on and so forth. After all, my whole life so far has been "soft".
+                </div>
+                <div id="skillsImage">
+                    <img src="https://i.ibb.co/yWx8c6C/skills.png">
+                </div>
+            </div>
+        </div>
     </div>
     
     <div id="contact" class="basic-div dark">

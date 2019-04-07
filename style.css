@@ -26,6 +26,9 @@ html body {
     -webkit-clip-path: polygon(0 0, 25% 0, 0 100%, 0% 100%);
     clip-path: polygon(0 0, 25% 0, 0 100%, 0% 100%);
 }
+#navigation {
+    display: none;
+}
 #img-logo {
     width: 6vw;
     min-width: 50px;
@@ -39,7 +42,6 @@ html body {
 
 /* every div block */
 .section {
-/*    display: flex;*/
     transition: 1.4s;
 }
 
@@ -58,7 +60,7 @@ html body {
     left: 47vw;
 }
 .vafSkills {
-    left: 72vw;
+    left: 73vw;
 }
 
 #about-me {
@@ -70,11 +72,12 @@ html body {
     justify-content: center;
 }
 #about-me-page {
-    height: 100vh;
+    height: 90vh;
     width: 70vw;
     display: none;
     flex-direction: column;
     align-items: center;
+    text-align: justify;
 }
 .amBlock {
     height: 100%;
@@ -87,7 +90,7 @@ html body {
 }
 #amImage {
     flex: 1;
-    background-image: url("https://images.pexels.com/photos/423364/pexels-photo-423364.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-image: url("https://i.ibb.co/qmd70DX/image823.png");
     background-size: cover;
     background-position: center;
 }
@@ -96,6 +99,9 @@ html body {
     flex-direction: row;
     height:80vh;
     width: 70vw;
+}
+#about-contact {
+    text-align: right;
 }
 
 .page {
@@ -107,7 +113,6 @@ html body {
 }
 
 #projects {
-/*    display: flex;*/
     color: #aaaaaa;
     -webkit-clip-path: polygon(50% 0, 75% 0, 50% 100%, 25% 100%);
     clip-path: polygon(50% 0, 75% 0, 50% 100%, 25% 100%);
@@ -167,6 +172,33 @@ html body {
     -webkit-clip-path: polygon(75% 0, 100% 0, 75% 100%, 50% 100%);
     clip-path: polygon(75% 0, 100% 0, 75% 100%, 50% 100%);
 }
+#skills-page {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+#skillsText {
+    display: flex;
+    flex: 1;
+}
+#softSkills {
+    width: 25vw;
+}
+#skillsImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+}
+#skills-page img{
+    min-width: 250px;
+    width: 40vw;
+}
+#skills-page img:hover{
+    min-width: 400px;
+    width: 70vw;
+}
 
 #contact {
     color: #aaaaaa;
@@ -191,5 +223,38 @@ html body {
 .contact-link {
     color: #080808;
     text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    #amText {
+        font-size: calc(10px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+        line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+    }
+    
+    #amImage {
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+    }
+    
+    .projImg img{
+        max-width: 30vw;
+        width: scale;
+        max-height: 25vh;
+        transition: 0.8s;
+    }
+    .projImg img:hover {
+        transform: scale(1.6)
+    }
+    .projText {
+        font-size: calc(10px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+        line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+    }
+    
+    #softSkills {
+        width: 25vw;
+        font-size: calc(10px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+        line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+    }
 }
 
