@@ -1,5 +1,7 @@
 window.onresize = function(){ location.reload(); }
-console.log(screen.width)
+
+
+
 if(screen.width > 501) {
 // CLASS that shows divs on click
 class ShowDiv {
@@ -10,8 +12,6 @@ class ShowDiv {
         div.onclick = () => {
             this.showDiv(this.div, this.toBeDeleted, this.page)
         }
-    }
-    // div = each div, toBeDeleted = first divs names
     
     showDiv = (div, toBeDeleted, page) => {
         
@@ -76,23 +76,39 @@ document.getElementById("img-logo").onclick = function() {
 let whereToAddDiv = document.getElementById("projects-project");
 
 function addDiv(image, headline, subhead, text, github, live, lp) {
+    if (github !== "#") {
     newDiv = `
         <div class="proj">
             <div class="projImg">
                 <h2>${headline}</h2>
                 <img src=${image}>
-                
             </div>
             <div class="projText">
                 <h3>${subhead}</h3>
                 <p>${text}</p>
                 <div class="projLinks">
-                    <a href=${github} target="_blank">Github</a><br/>
+                <a href=${github} target="_blank">Github</a><br/>
                     <a href=${live} target="_blank">Live preview ${lp}</a>
                 </div>
             </div>
         </div><hr/>
-    `;
+    `} else {
+        newDiv = `
+        <div class="proj">
+            <div class="projImg">
+                <h2>${headline}</h2>
+                <img src=${image}>
+            </div>
+            <div class="projText">
+                <h3>${subhead}</h3>
+                <p>${text}</p>
+                <div class="projLinks">
+                    <a href=${live} target="_blank">Live preview ${lp}</a>
+                </div>
+            </div>
+        </div><hr/>
+    `
+    };
     whereToAddDiv.insertAdjacentHTML("beforeend", newDiv)
 }
 
@@ -102,19 +118,19 @@ addDiv("https://i.ibb.co/FbcgHyD/djo1.png",
        "Restaurant Djem & Olive", 
        "Famous restaurant by famous cook Džemi Oliver", 
        "Single-page restaurant website. It has everything one restaurant needs. Reservations, downloadable menu, opening hours, specialities etc. TBC", 
-       "#", 
+       "https://github.com/the-jovan/restaurant-basic", 
        "https://codepen.io/witz/full/MxBdwx", "here")
 addDiv("https://i.ibb.co/8xT6cMG/mtd1.png", 
        "Mercenary list", 
        "Sort of To-Do App", 
        "What if your task app wasn't simply: 1. add task; 2. delete task? Okay, what if it was that, but with extra steps. It's all about presentation. You get to be a mercenary now, and get your very own Mechanic to deal with those who fail you, should you want that.", 
-       "#", 
+       "https://github.com/the-jovan/to-do_mercs", 
        "https://codepen.io/witz/full/PLvmOV", "here")
 addDiv("https://i.ibb.co/cCGCm4x/par1.png", 
        "Equilibrium", 
        "Helping you find your way since '2019", 
        "Simple parallax-scroll website for helping people figure out their purpose in life, and give them a push towards achieving it. It's pretty straight-forward with little to no effects, other than specific scroll type. On the bottom there's a button that opens contact form.", 
-       "#", 
+       "https://github.com/the-jovan/parallax", 
        "https://codepen.io/witz/full/gEwbVb", "here")
 addDiv("https://i.ibb.co/VVVczz2/unsplash.png",
       "Unsplash API",
