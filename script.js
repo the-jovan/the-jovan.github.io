@@ -136,13 +136,13 @@ addDiv("https://i.ibb.co/cCGCm4x/par1.png",
        "https://codepen.io/witz/full/gEwbVb", "here")
 addDiv("https://i.ibb.co/VVVczz2/unsplash.png",
       "Unsplash API",
-      "WAITING FOR DUSAN",
+      "React Unsplash API app",
       "Mini Google-images like app that displays fixed amount (currently ten), of images in grid style. Styled with Semantic UI. Needs some tweaking but functionality is there",
       "https://github.com/the-jovan/google_images_sorta",
       "#", "coming soon")
 addDiv("https://i.ibb.co/fpsRJwx/utube.png",
       "YouTube API",
-      "waiting for dusan",
+      "React YouTube API app",
       "YouTube rip-off. Fetches data from YouTube and displays it.",
       "https://github.com/the-jovan/miniTube",
       "#", "coming soon")
