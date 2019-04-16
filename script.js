@@ -12,6 +12,8 @@ class ShowDiv {
         div.onclick = () => {
             this.showDiv(this.div, this.toBeDeleted, this.page)
         }
+    }
+    // div = each div, toBeDeleted = first divs names
     
     showDiv = (div, toBeDeleted, page) => {
         
