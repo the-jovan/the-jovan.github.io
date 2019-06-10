@@ -1,0 +1,42 @@
+.contact {
+    @include section-info;
+    @include section-info-dark;
+
+    -webkit-clip-path: polygon(100% 0, 75% 100%, 100% 100%);
+    clip-path: polygon(100% 0, 75% 100%, 100% 100%);
+
+    @include respond(phone) {
+        @include main-media;
+        height: 15vh;
+        margin-bottom: none;
+        top: 90vh;
+    }
+
+    &__info {
+        font-size: 1.4rem;
+        text-align: right;
+        height: 15vh;
+        width: 15vw;
+        position: relative;
+        top: 80%;
+        left: 83%;
+
+        @include respond(tab-port) {
+            width: 20vw;
+            left: 78%;
+            top: 77%;
+        }
+
+        @include respond(phone) {
+            left: 0;
+            top: 20%;
+            width: 100vw;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        & a {
+            color: inherit;
+        }
+    }
+}

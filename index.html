@@ -1,110 +1,118 @@
-﻿<html>
-    
+<!DOCTYPE html>
+<html>
 <head>
     <title>Jovan Jocić</title>
-
-    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 320px) and (max-device-width: 500px)" href="mobileStyle.css" />
-    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 501px)" href="style.css" />
-    
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-    
+
 <body>
+    <main id="main">
 
-<main>
-    <div id="logo-corner" class="basic-div dark">
-        <div id="logo-left">
-            <h2 id="logo-corner-name">Jovan Jocic</h2>
-            <div id="navigation">
-                <a href="#projects-page">Projects</a>
-                <a href="#skills-page">Skills</a>
-                <a href="#contact">Contact</a>
+        <header class="header">
+            <div class="header__name">
+                Jovan Jocić
             </div>
-        </div>
-        <div id="logo-right">
-            <img id="img-logo" src="https://i.ibb.co/VLvkM51/g900.png">
-        </div>
-    </div>
+            <div class="header__logo">
+                <img class="header__logo-img" src="https://i.ibb.co/VLvkM51/g900.png">
+                <div class="header__return">
+                        <p>&larr; return</p>
+                    </div>
+            </div>
+            
+        </header>
 
-    <div id="about-me" class="basic-div section light">
-        <div class="visibleAtFirst vafAbout">ABOUT ME</div>
-        <div id="about-me-page" class="page">
-            <h1>About me</h1>
-            <div id="amText">
-                <div id="amImage" class="amBlock"></div>
-                <div id="amText" class="amBlock">
-                    <div>
-                    <h4>Jack of all trades, master of some.</h4>
-                    <p>
-                        Hi there. I'm self-motivated and self-taught web-developer in making.
-                        <br/><br/>
-                        Throughout my life I've discovered that I have a knack for creative stuff. I'm simply good at creating something out of nothing, whether it has physical form - light boxes, poems, logos etc. or not - music, singing (in Portuguesse...long story for another time). 
-                        <br/><br/>
-                        Think of this as of another way of me trying to express myself.
-                        <br/><br/> 
-                        First few projects might give a different vibe, but I do not like ordinary ("here's navigation bar, click or scroll") things. At the moment I'm all about making minimalistic websites with lots of detail that will not make you scroll endlessly to get somewhere, but instead will interact with you and create itself in front of your eyes.
-                        <br/><br/>
-                        Currently focused on becoming Full-Stack React developer. (Speaking of which, official React portfolio is coming soon)
-                        <br/>
-                    </p>
-                        <div id="about-contact">
-                        Contact, links & stuff:<hr/>
-                        <a class="contact-link" href="https://github.com/the-jovan" target="_blank">github</a>
-                        <p id="email">jovanjocic1993@gmail.com</p>
-                        <hr/>
-                        <a class="contact-link" href="https://docdro.id/hHS2Mxr" target="_blank">Download CV</a>
-                            </div>
+        <section class="section-about">
+            <div class="section-about__clipped visibleAtFirst">
+                <p>About me</p>
+            </div>
+            <div class="section-about__full">
+                <div class="center-title">
+                    <h2>About me</h2>
+                </div>
+                <div class="section-about__full-container page-container">
+                    <div class="section-about__full-image"></div>
+                    <div class="section-about__full-text">
+                        <h2>Jack of all trades, master of some.</h2>
+                        <p>
+                            Hi there. I'm self-motivated and self-taught web-developer in making.
+                            <br/><br/>
+                            Throughout my life I've discovered that I have a knack for creative stuff. I'm simply good at creating something out of nothing, whether it has physical form - light boxes, poems, logos etc. or not - music, singing (in Portuguesse...long story for another time). 
+                            <br/><br/>
+                            Think of this as of another way of me trying to express myself.
+                            <br/><br/> 
+                            First few projects might give a different vibe, but I do not like ordinary ("here's navigation bar, click or scroll") things. At the moment I'm all about making minimalistic websites with lots of detail that will not make you scroll endlessly to get somewhere, but instead will interact with you and create itself in front of your eyes.
+                            <br/><br/>
+                            Currently focused on becoming Full-Stack React developer. (Speaking of which, official React portfolio is coming soon)
+                            <br/>
+                        </p>
+                        <div class="section-about__full-contact">
+                            Contact, links & stuff:<hr/>
+                            <a class="contact-link" href="https://github.com/the-jovan" target="_blank">github</a>
+                            <p id="email">jovanjocic1993@gmail.com</p>
+                            <hr/>
+                            <a class="contact-link" href="https://docdro.id/hHS2Mxr" target="_blank">Download CV</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <section class="section-projects">
+            <div class="section-projects__clipped visibleAtFirst">
+                <p>Projects</p>
             </div>
-        </div>
-    </div>
-    
-    <div id="projects" class="basic-div section dark">
-        <div class="visibleAtFirst vafProjects">PROJECTS</div>
-        <div id="projects-page" class="page">
-            <div id="projectsHeadline">
-                <h1>Projects</h1>
-            </div>
-            <div id="projects-project"></div>
-        </div>
-    </div>
-    
-    <div id="skills" class="basic-div section light">
-        <div class="visibleAtFirst vafSkills">SKILLS</div>
-        <div id="skills-page" class="page">
-                <h1>Skills</h1>
-            <div id="skillsText">
-                <div id="softSkills">
-                    <ul>
-                        <li><u>Creativity</u> - With many talents come many hobbies...way to many to handle in one lifetime</li>
-                        <li><u>Accountability</u> - When I say I'll do it, it's done..
-                        </li>
-                        <li><u>Patience</u> - I'm coaching uninterested children and high-schoolers. Nothing else to add.</li>
-                        <li><u>Problem solving</u> - Godlike level "Escape the room" games solver, among other things.</li>
-                        <li><u>Curiosity</u> - When in new surroundings I usually try to learn as much as I can as fast as possible, so I'll be everywhere, observing, asking, learning.</li>
-                        <li><u>Strong work ethic</u> - literally putting my goal before myself at this very moment.</li>
-                    </ul>
-                    And so on and so forth. After all, my whole life so far has been "soft".
+            <div class="section-projects__full">
+                <div class="center-title">
+                    <h2>Projects</h2>
                 </div>
-                <div id="skillsImage">
-                    <img src="https://i.ibb.co/yWx8c6C/skills.png">
+                <div class="section-projects__full-container page-container">
+                    
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+
+        <section class="section-skills">
+            <div class="section-skills__clipped visibleAtFirst">
+                <p>Skills</p>
+            </div>
+            <div class="section-skills__full">
+                <div class="center-title">
+                    <h2>Skills</h2>
+                </div>
+                <div class="section-skills__full-container page-container">
+                    <div class="section-skills__full-list">
+                        <ul>
+                            <li><u>Creativity</u> - With many talents come many hobbies...way to many to handle in one lifetime</li>
+                            <li><u>Accountability</u> - When I say I'll do it, it's done..
+                            </li>
+                            <li><u>Patience</u> - I'm coaching uninterested children and high-schoolers. Nothing else to add.</li>
+                            <li><u>Problem solving</u> - Godlike level "Escape the room" games solver, among other things.</li>
+                            <li><u>Curiosity</u> - When in new surroundings I usually try to learn as much as I can as fast as possible, so I'll be everywhere, observing, asking, learning.</li>
+                            <li><u>Strong work ethic</u> - literally putting my goal before myself at this very moment.</li>
+                        </ul>
+                        And so on and so forth. After all, my whole life so far has been "soft".
+                    </div>
+                    <div class="section-skills__full-image">
+                        <img src="https://i.ibb.co/yWx8c6C/skills.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="contact">
+            <div class="contact__info">
+                <a href="https://github.com/the-jovan" target="_blank">github</a>
+                <p id="email">jovanjocic1993@gmail.com</p>
+                <a href="https://docdro.id/edJZLMY" target="_blank">Download CV</a>
+            </div>
+            
+        </footer>
+        
+        <script src="script.js"></script>
+    </main>
     
-    <div id="contact" class="basic-div dark">
-        <div id="contact-info">
-            <a href="https://github.com/the-jovan" target="_blank">github</a>
-            <p id="email">jovanjocic1993@gmail.com</p>
-            <a href="https://docdro.id/edJZLMY" target="_blank">Download CV</a>
-        </div>
-    </div>
-    
-    <script src="script.js"></script>
-</main>
-    
-    
+
 </body>
 </html>

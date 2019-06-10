@@ -1,116 +1,110 @@
 window.onresize = function(){ location.reload(); }
 
+let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 
-
-if(screen.width > 501) {
-// CLASS that shows divs on click
 class ShowDiv {
-    constructor(div, page) {
-        this.div = div;
+    constructor (div, page, path, fromTop) {
+        this.div = div
         this.page = page
+        this.path = path
+        this.fromTop = fromTop
         this.toBeDeleted = document.querySelectorAll(".visibleAtFirst")
         div.onclick = () => {
             this.showDiv(this.div, this.toBeDeleted, this.page)
         }
+        document.querySelector(".header__logo").onclick = () => {
+            this.hideDiv(this.fromTop)
+        }
     }
-    // div = each div, toBeDeleted = first divs names
+
+    // shows main page on click
     
     showDiv = (div, toBeDeleted, page) => {
-        
-        div.style.clipPath = "polygon(15% 0%, 125% 0, 100% 100%, -15% 100%)";
+        if (viewportWidth > 600) {
+            div.style.clipPath = "polygon(15% 0%, 125% 0, 100% 100%, -15% 100%)" }
+        else {
+            div.style.clipPath = "none"
+            div.style.height = "85vh"
+            div.style.top = "15vh"
+        }
         div.style.zIndex = "3"
         setTimeout(function() {
             toBeDeleted.forEach( e => {
-            e.style.display = "none"
-            page.style.display = "flex";
-        })
+                e.style.display = "none"
+                page.style.display = "block"
+                document.querySelector(".header__return").style.display = "block"
+            })
         }, 600)
+    }
+
+    // hides main page when logo is clicked
+    hideDiv = () => {
+        pages.find( e => {
+            if (viewportWidth > 600) {
+                if (e[0].style.clipPath = "polygon(15% 0%, 125% 0, 100% 100%, -15% 100%)") {
+                    e[0].style.clipPath = `${e[2]}`
+                    e[0].style.zIndex = "0"
+                    e[1].style.display = "none"
+                    setTimeout(function() {
+                        document.querySelector(".header__return").style.display = "none"
+                        document.querySelectorAll(".visibleAtFirst").forEach( x => {
+                        x.style.display = "block" })
+                    }, 300)
+                }
+            } else {
+                if (e[0].style.height = "85vh") {
+                    e[0].style.height = `25vh`
+                    e[0].style.top = e[3]
+                    e[0].style.zIndex = "0"
+                    e[1].style.display = "none"
+                    setTimeout(function() {
+                        document.querySelector(".header__return").style.display = "none"
+                        document.querySelectorAll(".visibleAtFirst").forEach( x => {
+                        x.style.display = "flex" })
+                    }, 300)
+            }
+        } 
+        }
         
+        )
     }
 }
 
-new ShowDiv(document.getElementById("about-me"), document.getElementById("about-me-page"))
-new ShowDiv(document.getElementById("projects"), document.getElementById("projects-page"))
-new ShowDiv(document.getElementById("skills"), document.getElementById("skills-page"))
 
 
-// needs to be compressed somehow
-document.getElementById("img-logo").onclick = function() {
-    if (document.getElementById("about-me").style.clipPath = "polygon(15% 0%, 125% 0, 100% 100%, -15% 100%)") {
-        document.getElementById("about-me").style.clipPath = "polygon(25% 0, 50% 0, 25% 100%, 0% 100%)"
-        document.getElementById("about-me").style.zIndex = "0"
-        document.getElementById("about-me-page").style.display = "none";
-        document.querySelectorAll(".visibleAtFirst").forEach( e => {
-            e.style.display = "block"
-        })
-    }
-    if (document.getElementById("projects").style.clipPath = "polygon(15% 0%, 125% 0, 100% 100%, -15% 100%)") {
-        document.getElementById("projects").style.clipPath = "polygon(50% 0, 75% 0, 50% 100%, 25% 100%)";
-        document.getElementById("projects").style.zIndex = "0"
-        document.getElementById("projects-page").style.display = "none";
-        document.querySelectorAll(".visibleAtFirst").forEach( e => {
-            e.style.display = "block"
-        })
-//        setTimeout(function() { document.getElementById("projectsPage").style.display = "none"}, 1400);
-    }
-    if (document.getElementById("skills").style.clipPath = "polygon(15% 0%, 125% 0, 100% 100%, -15% 100%)") {
-        document.getElementById("skills").style.clipPath = "polygon(75% 0, 100% 0, 75% 100%, 50% 100%)";
-        document.getElementById("skills").style.zIndex = "0"
-        document.getElementById("skills-page").style.display = "none";
-        document.querySelectorAll(".visibleAtFirst").forEach( e => {
-            e.style.display = "block"
-        })
-//        setTimeout(function() { document.getElementById("skillsPage").style.display = "none"}, 1400);
-    }
-}
-} else {
-    null
-//    alert("Better experience in horizontal view.")
-}
+const pages = [
+    [document.querySelector(".section-about"), document.querySelector(".section-about__full"), "polygon(25% 0, 50% 0, 25% 100%, 0% 100%)", "15vh"],
+    [document.querySelector(".section-projects"), document.querySelector(".section-projects__full"), "polygon(50% 0, 75% 0, 50% 100%, 25% 100%)", "40vh"],
+    [document.querySelector(".section-skills"), document.querySelector(".section-skills__full"), "polygon(75% 0, 100% 0, 75% 100%, 50% 100%)", "65vh"]
+]
 
-
-
+pages.forEach( e => {
+    new ShowDiv(e[0], e[1], e[2])
+})
 
 
 
 // PROJECTS FROM HERE ON
 // _________________________________
-let whereToAddDiv = document.getElementById("projects-project");
+let whereToAddDiv = document.querySelector(".section-projects__full-container");
 
 function addDiv(image, headline, subhead, text, github, live, lp) {
-    if (github !== "#") {
     newDiv = `
-        <div class="proj">
-            <div class="projImg">
+        <div class="project">
+            <div class="project__image">
                 <h2>${headline}</h2>
                 <img src=${image}>
             </div>
-            <div class="projText">
+            <div class="project__text">
                 <h3>${subhead}</h3>
                 <p>${text}</p>
-                <div class="projLinks">
+                <div class="project__text-links">
                 <a href=${github} target="_blank">Github</a><br/>
                     <a href=${live} target="_blank">Live preview ${lp}</a>
                 </div>
             </div>
         </div><hr/>
-    `} else {
-        newDiv = `
-        <div class="proj">
-            <div class="projImg">
-                <h2>${headline}</h2>
-                <img src=${image}>
-            </div>
-            <div class="projText">
-                <h3>${subhead}</h3>
-                <p>${text}</p>
-                <div class="projLinks">
-                    <a href=${live} target="_blank">Live preview ${lp}</a>
-                </div>
-            </div>
-        </div><hr/>
     `
-    };
     whereToAddDiv.insertAdjacentHTML("beforeend", newDiv)
 }
 

@@ -1,0 +1,78 @@
+.section-about {
+    @include section-info;
+    @include section-info-light;
+
+    -webkit-clip-path: polygon(25% 0%, 50% 0, 25% 100%, 0% 100%);
+    clip-path: polygon(25% 0%, 50% 0, 25% 100%, 0% 100%);
+
+    transition: all .6s linear;
+
+    @include respond(phone) {
+        @include main-media;
+        height: 25vh;
+        top: 15vh;
+    }
+  
+    &__clipped {
+        @include clipped;
+        left: 22%;
+
+        @include respond(tab-port) {
+            left: 20%;
+        }
+
+        @include respond(phone) {
+            @include center-clipped;
+        }
+    }
+
+    &__full {
+        display: none;
+
+        &-container {
+            display: flex;
+
+        }
+
+        &-image {
+            flex: 1;
+            background-image: url("https://i.ibb.co/qmd70DX/image823.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        &-text {
+            flex: 2;
+            font-size: 1.3rem;
+            padding-left: 1rem;
+
+            @include respond(tab-port) {
+                font-size: 1rem;
+            }
+        }
+
+        &-contact {
+            text-align: right;
+
+            & a {
+                color: inherit;
+            }
+        }
+
+        @include respond(phone) {
+            &-container {
+                display: block;
+            }
+
+            &-image {
+                display: none;
+            }
+
+            &-text {
+                font-size: 1.4vh;
+            }
+        }
+    }
+}
+
+

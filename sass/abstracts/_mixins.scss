@@ -1,0 +1,62 @@
+@mixin section-info {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    transition: all .6s linear;
+}
+
+@mixin section-info-dark {
+    background-color: $color-dark;
+    color: $color-light;
+    background-image: $static-background;
+}
+
+@mixin section-info-light {
+    background-color: $color-light;
+    color: $color-dark;
+    background-image: $static-background;
+}
+
+@mixin clipped {
+    width: 10rem;
+    height: 5rem;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    position: relative;
+    top: 44%;
+    cursor: default;
+}
+
+@mixin main-media {
+    width: 100%;
+    position: absolute;
+    clip-path: none;
+    margin-bottom: -2.5vh;
+}
+
+@mixin center-clipped {
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet-portrait   / tab-port
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 600px) { @content };
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: 900px) { @content };
+    }
+    
+}
