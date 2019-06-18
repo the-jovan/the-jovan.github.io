@@ -24,7 +24,7 @@ class ShowDiv {
             div.style.clipPath = "polygon(15% 0%, 125% 0, 100% 100%, -15% 100%)" }
         else {
             div.style.clipPath = "none"
-            div.style.height = "85vh"
+            div.style.height = "76vh"
             div.style.top = "15vh"
         }
         div.style.zIndex = "3"
@@ -52,8 +52,8 @@ class ShowDiv {
                     }, 300)
                 }
             } else {
-                if (e[0].style.height = "85vh") {
-                    e[0].style.height = `25vh`
+                if (e[0].style.height = "76vh") {
+                    e[0].style.height = `22vh`
                     e[0].style.top = e[3]
                     e[0].style.zIndex = "0"
                     e[1].style.display = "none"
@@ -74,8 +74,8 @@ class ShowDiv {
 
 const pages = [
     [document.querySelector(".section-about"), document.querySelector(".section-about__full"), "polygon(25% 0, 50% 0, 25% 100%, 0% 100%)", "15vh"],
-    [document.querySelector(".section-projects"), document.querySelector(".section-projects__full"), "polygon(50% 0, 75% 0, 50% 100%, 25% 100%)", "40vh"],
-    [document.querySelector(".section-skills"), document.querySelector(".section-skills__full"), "polygon(75% 0, 100% 0, 75% 100%, 50% 100%)", "65vh"]
+    [document.querySelector(".section-projects"), document.querySelector(".section-projects__full"), "polygon(50% 0, 75% 0, 50% 100%, 25% 100%)", "37vh"],
+    [document.querySelector(".section-skills"), document.querySelector(".section-skills__full"), "polygon(75% 0, 100% 0, 75% 100%, 50% 100%)", "59vh"]
 ]
 
 pages.forEach( e => {

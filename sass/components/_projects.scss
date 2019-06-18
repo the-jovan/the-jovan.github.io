@@ -1,6 +1,7 @@
 .section-projects {
     @include section-info;
     @include section-info-dark;
+    @include media-tab;
 
     -webkit-clip-path: polygon(50% 0, 75% 0, 50% 100%, 25% 100%);
     clip-path: polygon(50% 0, 75% 0, 50% 100%, 25% 100%);
@@ -9,8 +10,8 @@
 
     @include respond(phone) {
         @include main-media;
-        height: 25vh;
-        top: 40vh;
+        height: 22vh;
+        top: 37vh;
     }
 
     &__clipped {

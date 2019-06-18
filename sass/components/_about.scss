@@ -1,6 +1,7 @@
 .section-about {
     @include section-info;
     @include section-info-light;
+    @include media-tab;
 
     -webkit-clip-path: polygon(25% 0%, 50% 0, 25% 100%, 0% 100%);
     clip-path: polygon(25% 0%, 50% 0, 25% 100%, 0% 100%);
@@ -9,7 +10,7 @@
 
     @include respond(phone) {
         @include main-media;
-        height: 25vh;
+        height: 22vh;
         top: 15vh;
     }
   

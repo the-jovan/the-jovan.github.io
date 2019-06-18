@@ -1,6 +1,7 @@
 .section-skills {
     @include section-info;
     @include section-info-light;
+    @include media-tab;
 
     -webkit-clip-path: polygon(75% 0, 100% 0, 75% 100%, 50% 100%);
     clip-path: polygon(75% 0, 100% 0, 75% 100%, 50% 100%);
@@ -9,8 +10,8 @@
 
     @include respond(phone) {
         @include main-media;
-        height: 25vh;
-        top: 65vh;
+        height: 22vh;
+        top: 59vh;
     }
 
     &__clipped {
@@ -42,7 +43,11 @@
             font-size: 1.4rem;
 
             @include respond(tab-port) {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
+            }
+
+            @include respond(phone) {
+                font-size: 1.5rem;
             }
         }
 

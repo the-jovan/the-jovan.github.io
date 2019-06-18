@@ -1,6 +1,7 @@
 .contact {
     @include section-info;
     @include section-info-dark;
+    @include media-tab;
 
     -webkit-clip-path: polygon(100% 0, 75% 100%, 100% 100%);
     clip-path: polygon(100% 0, 75% 100%, 100% 100%);
@@ -9,7 +10,7 @@
         @include main-media;
         height: 15vh;
         margin-bottom: none;
-        top: 90vh;
+        top: 81vh;
     }
 
     &__info {

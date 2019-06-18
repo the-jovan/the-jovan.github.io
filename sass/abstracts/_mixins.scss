@@ -42,7 +42,11 @@
     justify-content: center;
 }
 
-
+@mixin media-tab {
+    @include respond(tab-port) {
+        height: 90vh;
+    }
+}
 
 
 // MEDIA QUERY MANAGER
