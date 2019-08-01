@@ -110,12 +110,12 @@ function addDiv(image, headline, subhead, text, github, live, lp) {
 
 // PROJECTS
 // _______________________________________
-addDiv("https://i.ibb.co/FbcgHyD/djo1.png", 
-       "Restaurant Djem & Olive", 
-       "Famous restaurant by famous cook Džemi Oliver", 
-       "Single-page restaurant website. It has everything one restaurant needs. Reservations, downloadable menu, opening hours, specialities etc. TBC", 
-       "https://github.com/the-jovan/restaurant-basic", 
-       "https://codepen.io/witz/full/MxBdwx", "here")
+addDiv("https://i.ibb.co/mGSdvcn/cards.png",
+      "Hotel V",
+      "Card-like hotel portfolio",
+      "Eventful menu of everything Hotel V (symbolic name for hotel with five stars) has to offer.",
+      "https://github.com/the-jovan/cards",
+      "https://codepen.io/witz/full/ymbdjW")
 addDiv("https://i.ibb.co/8xT6cMG/mtd1.png", 
        "Mercenary list", 
        "Sort of To-Do App", 
@@ -140,12 +140,6 @@ addDiv("https://i.ibb.co/fpsRJwx/utube.png",
       "YouTube rip-off. Fetches data from YouTube and displays it.",
       "https://github.com/the-jovan/miniTube",
       "#", "coming soon")
-addDiv("https://i.ibb.co/rdnJtwS/champ1.png", 
-       "Champion", 
-       "We are still looking", 
-       'One of my first "projects". Utterly useless, but hey, at least it is responsive. What you see is what you get. Really no need to visit the page, but if you want...',
-       "#", 
-       "https://codepen.io/witz/full/OdNEZy", "here")
 addDiv("https://i.ibb.co/7g8Vv6j/cla1.png", 
        "WordPress blog", 
        "Applied WP theme (it's something!)", 
@@ -158,5 +152,12 @@ addDiv("https://i.ibb.co/XVJWQ5k/form.png",
       '"Help us improve" type of survey to help firm get better idea of what needs to be improved.',
       "#",
       "https://codepen.io/witz/full/pqWdKw", "here")
+addDiv("https://i.ibb.co/FbcgHyD/djo1.png", 
+      "Restaurant Djem & Olive", 
+      "Famous restaurant by famous cook Džemi Oliver", 
+      "Single-page restaurant website. It has everything one restaurant needs. Reservations, downloadable menu, opening hours, specialities etc. TBC", 
+      "https://github.com/the-jovan/restaurant-basic", 
+      "https://codepen.io/witz/full/MxBdwx", "here")      
+
 
 //________________________________________________________
